@@ -8,7 +8,9 @@ const Layout = () => {
             <div className='container mx-auto'>
                 <Navbar></Navbar>
             </div>
+            <div >
             <Outlet></Outlet>
+            </div>
         </div>
     );
 };

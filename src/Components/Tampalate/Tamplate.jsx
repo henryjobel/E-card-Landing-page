@@ -1,9 +1,12 @@
 import React from 'react';
+import Carousel from '../Carousel/Carousel';
 
 const Tamplate = () => {
     return (
-        <div>
-        
+        <div> 
+            <div>
+                <Carousel></Carousel>
+            </div>
         </div>
     );
 };
