@@ -14,8 +14,9 @@ const router = createBrowserRouter([
             
         },
         {
-          path:"pvc-product-details",
-          element:<ProductDetails1></ProductDetails1>
+          path:`pvc-product-details/:id`,
+          element:<ProductDetails1></ProductDetails1>,
+          loader:()=> fetch('/pvcCard.json')
         }
       ]
     },

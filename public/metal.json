@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "White PVC | Digital Business Card",
+      "image": "https://i.ibb.co/jDPq0qf/1.png",
+      "price": 1499,
+      "description": "Step into the future of professional networking with the MCARD White PVC Smart Business Card. A beacon of sophistication and innovation, this smart card allows you to share your contact information and online presence effortlessly. Ideal for entrepreneurs, freelancers, and forward-thinking professionals, MCARD offers a sleek, eco-friendly, and efficient way to connect. Make a lasting impression with the pristine elegance of white PVC, encapsulating the essence of modern networking.",
+      "color": "white",
+      "features": [
+        {
+          "qrcode": "Powered by NFC & QR code",
+          "cardsize": "Card Size: 85.6 mm x 53.98 mm",
+          "noapp": "iOS & Android | No App needed",
+          "nade": "Made of high grade PVC",
+          "tree": "Tree planted for every Card sold",
+          "delivery": "Printed & shipped within 7days"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Black PVC | Digital Business Card",
+      "image": "https://i.ibb.co/jDPq0qf/1.png",
+      "price": 1499,
+      "description": "Step into the future of professional networking with the MCARD White PVC Smart Business Card. A beacon of sophistication and innovation, this smart card allows you to share your contact information and online presence effortlessly. Ideal for entrepreneurs, freelancers, and forward-thinking professionals, MCARD offers a sleek, eco-friendly, and efficient way to connect. Make a lasting impression with the pristine elegance of white PVC, encapsulating the essence of modern networking.",
+      "color": "Red",
+      "features": [
+        {
+          "qrcode": "Powered by NFC & QR code",
+          "cardsize": "Card Size: 85.6 mm x 53.98 mm",
+          "noapp": "iOS & Android | No App needed",
+          "nade": "Made of high grade PVC",
+          "tree": "Tree planted for every Card sold",
+          "delivery": "Printed & shipped within 7days"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Interactive Circle Sticker",
+      "image": "https://i.ibb.co/jDPq0qf/1.png",
+      "price": 1499,
+      "description": "Step into the future of professional networking with the MCARD White PVC Smart Business Card. A beacon of sophistication and innovation, this smart card allows you to share your contact information and online presence effortlessly. Ideal for entrepreneurs, freelancers, and forward-thinking professionals, MCARD offers a sleek, eco-friendly, and efficient way to connect. Make a lasting impression with the pristine elegance of white PVC, encapsulating the essence of modern networking.",
+      "color": "Red",
+      "features": [
+        {
+          "qrcode": "Powered by NFC & QR code",
+          "cardsize": "Card Size: 85.6 mm x 53.98 mm",
+          "noapp": "iOS & Android | No App needed",
+          "nade": "Made of high grade PVC",
+          "tree": "Tree planted for every Card sold",
+          "delivery": "Printed & shipped within 7days"
+        }
+      ]
+    }
+  ]
