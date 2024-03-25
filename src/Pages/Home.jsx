@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Banner from '../Components/Banner/Banner';
 import Carousel from '../Components/Carousel/Carousel';
 import backgroundImage from '../assets/tampic/Brown Elegant Vlog Sunset Youtube Thumbnail.png';
 import Acordian from '../Components/Accordian/Acordian';
 import OurProducts from '../Components/OurProducts/OurProducts';
 
+
 const Home = () => {
+
     return (
         <div>
             {/* banner sections */}
@@ -30,14 +32,16 @@ const Home = () => {
                 <Acordian></Acordian>
             </div>
             {/* our product sections */}
-            <div className='container mx-auto'>
+            <div className='continer mx-auto'>
                 <h1 className='text-5xl font-bold text-center pt-10 pb-10'>Our Products</h1>
-                <div>
+                <h1 className='text-4xl font-semibold text-center pt-10 pb-10 text-black'>PVC Cards</h1>
+            </div>
+            <div className='container lg:w-[1200px] mx-auto'>
                 <OurProducts></OurProducts>
-                </div>
             </div>
             <div>
-
+            <h1 className='text-4xl font-semibold text-center pt-10 pb-10 text-black'>Metal Cards</h1>
+            <h1 className='text-4xl font-semibold text-center pt-10 pb-10 text-black'>Wood Card</h1>
             </div>
         </div>
     );
