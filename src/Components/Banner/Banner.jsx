@@ -11,7 +11,7 @@ const Banner = () => {
                     <h1 className="text-5xl font-bold text-gray-800 leading-tight">DIGITAL BUSINESS</h1>
                     <h1 className="text-5xl font-bold text-gray-800 leading-tight">EXPOSE YOUR IDENTITY</h1>
                     <p className="text-2xl text-gray-600 mt-4">Instantly access your profile by tapping or scanning the QR code on your MCard <br /> After ordering, our designer will contact you and design according to your choice.</p>
-                    <button className="bg-indigo-600 hover:bg-indigo-700 text-white text-xl mt-8 py-4 px-8 rounded-lg">Get Started</button>
+                    {/* <button className="bg-indigo-600 hover:bg-indigo-700 text-white text-xl mt-8 py-4 px-8 rounded-lg">Get Started</button> */}
                 </div>
                 <div>
                     <img src={banner} alt="" />
