@@ -5,6 +5,8 @@ import ProductDetails1 from "../Components/OurProducts/ProductDetailsPage/Produc
 import ProductCardDetails3 from "../Components/OurProducts/Wood/ProductCardDetails3";
 import ProductDetails2 from "../Components/OurProducts/Metal/ProductDetails2";
 import PurchesFrom from "../Components/PurchesForm/PurchesFrom";
+import CheckOut from "../Pages/CheckoutPage/CheckOut";
+import Purchaseform2 from "../Components/PurchesForm/Purchaseform2";
 
 const router = createBrowserRouter([
     {
@@ -32,9 +34,19 @@ const router = createBrowserRouter([
           loader:()=> fetch('/wood.json')
         },
         {
-          path:"purchase/:id",
+          path:"purchase/:id/:price", // Include ":price" parameter in the URL
           element:<PurchesFrom></PurchesFrom>,
+          loader:()=> fetch('/pvcCard.json')
+        },
+        {
+          path:"purchase2/:id",
+          element:<Purchaseform2></Purchaseform2>,
           loader:()=> fetch('/metal.json')
+        },
+        {
+          path:"checkout/:id",
+          element:<CheckOut></CheckOut>,
+          loader:()=> fetch('/pvcCard.json')
         }
       ]
     },

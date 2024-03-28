@@ -36,10 +36,10 @@ const ProductDetails2 = () => {
 
                     <select className="select select-info w-full max-w-xs mt-5 font-bold">
                         <option disabled selected>Semi-Customize</option>
-                        <option>Full Customize +500Tk Extra ADDED</option>
+                        <option>Full Customize</option>
                     </select>
                     <div className='flex gap-2'>
-                        <Link to={`/purchase/${id}`} className='btn btn-outline mt-5 w-[300px]'>Buy Now</Link>
+                        <Link to={`/purchase2/${id}`} className='btn btn-outline mt-5 w-[300px]'>Buy Now</Link>
                         {/* Render PurchaseForm component with product name and price as props */}
 
 

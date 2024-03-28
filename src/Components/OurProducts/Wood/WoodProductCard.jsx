@@ -17,7 +17,7 @@ const WoodProductCard = ({product}) => {
                             <span className="text-black text-2xl font-bold">Price: {price} TK</span>
                         </div>
                         <div className="flex  mt-4">
-                            <Link to={`/pvc-product-details/${id}`}><button className='btn btn-outline w-[350px]'>See Details</button></Link>
+                            <Link to={`/wood-product-details/${id}`}><button className='btn btn-outline w-[350px]'>See Details</button></Link>
                         </div>
                     </div>
                 </div>
