@@ -34,23 +34,30 @@ const Home = () => {
                 <Acordian></Acordian>
             </div>
             {/* our product sections */}
-            <div className='continer mx-auto'>
-                <h1 className='text-5xl font-bold text-center pt-10 pb-10'>Our Products</h1>
-                <h1 className='text-4xl font-semibold text-center pt-10 text-black'>PVC Cards</h1>
-            </div>
-            <div className='container lg:w-[1200px] mx-auto'>
-                <OurProducts></OurProducts>
-            </div>
-            <div>
-                <h1 className='text-4xl font-semibold text-center pb-10 text-black'>Metal Cards</h1>
-                <div className='container lg:w-[1200px] mx-auto'>
-                    <MetalCard></MetalCard>
+            <div className='bg-[#f3f3ff]'>
+                <div>
+                    <h1 className='text-center text-5xl font-bold p-20'>Our Products</h1>
                 </div>
-                <h1 className='text-4xl font-semibold text-center pb-10 text-black'>Wood Card</h1>
-                <div className='container lg:w-[1200px] mx-auto'>
-                    <WoodCard></WoodCard>
+                <div>
+                    <h1 className='text-center text-3xl font-bold p-10'>PVC <span className='text-[#7638f9]'>CARD</span></h1>
+                    <div className='w-[1200px] container mx-auto'>
+                        <OurProducts></OurProducts>
+                    </div>
+                </div>
+                <div>
+                    <h1 className='text-center text-3xl font-bold p-10'>METAL <span className='text-[#7638f9]'>CARD</span></h1>
+                    <div className='w-[1200px] container mx-auto'>
+                        <MetalCard></MetalCard>
+                    </div>
+                </div>
+                <div>
+                    <h1 className='text-center text-3xl font-bold p-10'>WOOD <span className='text-[#7638f9]'>CARDS</span></h1>
+                    <div className='w-[1200px] container mx-auto'>
+                        <WoodCard></WoodCard>
+                    </div>
                 </div>
             </div>
+            
         </div>
     );
 };

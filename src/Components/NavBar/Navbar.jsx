@@ -26,12 +26,12 @@ const Navbar = () => {
                     <a className="btn btn-ghost text-xl">MCard</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 text-lg font-bold text-black">
                         {navLinks}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a href='https://mcardbd.com/login' className="btn btn-outline">Sing In</a>
                 </div>
             </div>
         </div>

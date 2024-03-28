@@ -39,14 +39,13 @@ const router = createBrowserRouter([
           loader:()=> fetch('/pvcCard.json')
         },
         {
-          path:"purchase2/:id",
+          path:"purchase2/:id/:price",
           element:<Purchaseform2></Purchaseform2>,
           loader:()=> fetch('/metal.json')
         },
         {
-          path:"checkout/:id",
-          element:<CheckOut></CheckOut>,
-          loader:()=> fetch('/pvcCard.json')
+          path:"checkout",
+          element:<CheckOut></CheckOut>
         }
       ]
     },

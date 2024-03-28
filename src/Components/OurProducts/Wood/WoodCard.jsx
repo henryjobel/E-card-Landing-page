@@ -13,7 +13,7 @@ const WoodCard = () => {
    console.log(product)
     
     return (
-        <div className='container grid gap-1 pt-20 mx-auto pb-52 lg:grid-cols-3'>
+        <div className='container grid gap-1 pt-20 mx-auto lg:grid-cols-3'>
             {
                 product.map(product => <WoodProductCard key={product.id} product={product}></WoodProductCard>)
             }
