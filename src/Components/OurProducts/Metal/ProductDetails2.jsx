@@ -53,7 +53,7 @@ const ProductDetails2 = () => {
                 onChange={handleCustomizationChange}
               >
                 <option value="Semi-Customize">Semi-Customize</option>
-                <option value="Full Customize">Full Customize (+500TK)</option>
+                <option value="Full Customize">Full Customize</option>
               </select>
               <div className='flex gap-2'>
                 <Link to={`/purchase2/${id}/${priceWithCustomization}`} className='btn btn-outline mt-5 w-[300px]'>Buy Now</Link>

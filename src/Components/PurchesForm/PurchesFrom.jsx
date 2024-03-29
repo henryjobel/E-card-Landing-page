@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import {  useLoaderData, useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Purchaseform2 = () => {
-    const [productName, setProductName] = useState('');
-    const [price, setPrice] = useState('');
+    const productdetails = useLoaderData();
+    const { id, price: defaultPrice } = useParams(); // Retrieve the price parameter from the URL
+    const selectedProduct = productdetails.find(band => band.id === parseInt(id));
+
+
+    const [productName, setProductName] = useState(selectedProduct.name); // Set default value for productName
+    const [price, setPrice] = useState(defaultPrice);
     const [companyName, setCompanyName] = useState('');
     const [fullName, setFullName] = useState('');
     const [address, setAddress] = useState('');
@@ -28,13 +34,34 @@ const Purchaseform2 = () => {
             password
         };
         console.log(newOrder);
+
+        // send data to the server
+        fetch('http://localhost:5000/pvccards', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newOrder)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Your work has been saved",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    // Redirect to checkout page after successful submission
+                    window.location.href = '/checkout'; // Replace '/checkout' with the actual path of your checkout page
+                }
+            })
     };
 
 
-    
-    const productdetails = useLoaderData();
-    const { id, price: defaultPrice } = useParams(); // Retrieve the price parameter from the URL
-    const selectedProduct = productdetails.find(band => band.id === parseInt(id));
+
+
 
     return (
         <div className='container mx-auto pb-40'>
@@ -45,21 +72,26 @@ const Purchaseform2 = () => {
                     <h1 className='text-3xl font-bold pt-4 text-center'>{selectedProduct.name}</h1>
                 </div>
                 <div>
-                    <div className='mt-5'>
-                        <label className='block'>Product Name</label>
-                        <input type="text" placeholder="Product Name" value={selectedProduct.name} readOnly className="input input-bordered input-info w-[350px]" />
+                    <div className='flex gap-5'>
+                        <div className='mt-5'>
+                            <label className='block'>Product Name</label>
+                            <input type="text" placeholder="Product Name" defaultValue={productName} readOnly className="input input-bordered input-info w-[350px]" />
+
+                        </div>
+                        <div className='mt-5'>
+                            <label className='block'>Price</label>
+                            <input type="text" placeholder="Price" defaultValue={price} readOnly className="input input-bordered input-info w-[350px]" />
+                        </div>
                     </div>
-                    <div className='mt-5'>
-                        <label className='block'>Price</label>
-                        <input type="text" placeholder="Price" value={price || defaultPrice} onChange={(e) => setPrice(e.target.value)} className="input input-bordered input-info w-[350px]" />
-                    </div>
-                    <div className='mt-5'>
-                        <label className='block'>Company Name</label>
-                        <input type="text" placeholder="Enter Your Company Name" onChange={(e) => setCompanyName(e.target.value)} className="input input-bordered input-info w-[350px]" />
-                    </div>
-                    <div className='mt-5'>
-                        <label className='block'>Full Name</label>
-                        <input type="text" placeholder="Enter Your Full Name" onChange={(e) => setFullName(e.target.value)} className="input input-bordered input-info w-[350px]" />
+                    <div className='flex gap-5'>
+                        <div className='mt-5'>
+                            <label className='block'>Company Name</label>
+                            <input type="text" placeholder="Enter Your Company Name" onChange={(e) => setCompanyName(e.target.value)} className="input input-bordered input-info w-[350px]" />
+                        </div>
+                        <div className='mt-5'>
+                            <label className='block'>Full Name</label>
+                            <input type="text" placeholder="Enter Your Full Name" onChange={(e) => setFullName(e.target.value)} className="input input-bordered input-info w-[350px]" />
+                        </div>
                     </div>
                     <div className='mt-5'>
                         <label className='block'>Address</label>
@@ -79,13 +111,15 @@ const Purchaseform2 = () => {
                         <label className='block'>Phone Number</label>
                         <input type="text" placeholder="+88017XXXXXXXX" onChange={(e) => setPhoneNumber(e.target.value)} className="input input-bordered input-info w-[450px]" />
                     </div>
-                    <div className='mt-5'>
-                        <label className='block'>Email</label>
-                        <input type="text" placeholder="example@gmail.com" onChange={(e) => setEmail(e.target.value)} className="input input-bordered input-info w-[350px]" />
-                    </div>
-                    <div className='mt-5'>
-                        <label className='block'>Create Password</label>
-                        <input type="password" placeholder="Create Password" onChange={(e) => setPassword(e.target.value)} className="input input-bordered input-info w-[350px]" />
+                    <div className='flex gap-5'>
+                        <div className='mt-5'>
+                            <label className='block'>Email</label>
+                            <input type="text" placeholder="example@gmail.com" onChange={(e) => setEmail(e.target.value)} className="input input-bordered input-info w-[350px]" />
+                        </div>
+                        <div className='mt-5'>
+                            <label className='block'>Create Password</label>
+                            <input type="password" placeholder="Create Password" onChange={(e) => setPassword(e.target.value)} className="input input-bordered input-info w-[350px]" />
+                        </div>
                     </div>
                     <button className='btn btn-outline w-full mt-5' onClick={handleOrderPlacement}>Place Your Order</button>
                 </div>

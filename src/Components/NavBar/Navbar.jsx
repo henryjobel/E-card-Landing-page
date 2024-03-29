@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../../assets/logo/BlackLogo-removebg-preview.png"
 
 const Navbar = () => {
 
@@ -23,7 +24,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">MCard</a>
+                    <img src={logo} className='w-[150px]' alt="mcardlogo" />
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-lg font-bold text-black">
