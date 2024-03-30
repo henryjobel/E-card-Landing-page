@@ -8,6 +8,7 @@ import PurchesFrom from "../Components/PurchesForm/PurchesFrom";
 import CheckOut from "../Pages/CheckoutPage/CheckOut";
 import Purchaseform2 from "../Components/PurchesForm/Purchaseform2";
 import Purchaseform3 from "../Components/PurchesForm/PurchesForm3";
+import PvcCheckout from "../Pages/CheckoutPage/pvcCheckout";
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
           path:"purchase3/:id/:price",
           element:<Purchaseform3></Purchaseform3>,
           loader:()=> fetch('/wood.json')
+        },
+        {
+          path: 'pvc-checkout/:id',
+          element:<PvcCheckout></PvcCheckout>,
+          loader:()=> fetch('/pvcCard.json')
         },
         {
           path:"checkout",

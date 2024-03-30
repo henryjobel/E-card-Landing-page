@@ -54,7 +54,7 @@ const Purchaseform2 = () => {
                         timer: 1500
                     });
                     // Redirect to checkout page after successful submission
-                    window.location.href = '/checkout'; // Replace '/checkout' with the actual path of your checkout page
+                    window.location.href = `/pvc-checkout/${id}`; // Replace '/checkout' with the actual path of your checkout page
                 }
             })
     };

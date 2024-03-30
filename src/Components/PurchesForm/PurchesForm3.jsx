@@ -49,7 +49,7 @@ const Purchaseform3 = () => {
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: "Your work has been saved",
+                        title: "Your work has been Done sucessfully now you can pay",
                         showConfirmButton: false,
                         timer: 1500
                     });

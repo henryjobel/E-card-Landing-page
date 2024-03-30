@@ -49,6 +49,13 @@ const CheckOut = () => {
                     <div>
                         <h1 className='text-3xl font-bold pb-2'>Procut titile nad nasdasdasdwdad+</h1>
                         <h1 className='text-3xl font-bold '>Total Price: 19999</h1>
+                        <h1>Delivery Charge</h1>
+                            <select className="select select-primary w-full max-w-xs">
+                                <option disabled selected>Select Your Payment Method</option>
+                                <option>Inside Dhaka 70 tk</option>
+                                <option>Out Side Dhaka 120 tk</option>
+                                <option>Rocket</option>
+                            </select>
 
                     </div>
                 </div>
