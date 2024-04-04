@@ -2,16 +2,16 @@
     {
       "id": 1,
       "name": "White PVC | Digital Business Card",
-      "image": "https://i.ibb.co/ncm697F/Whats-App-Image-2024-03-26-at-7-23-21-PM.jpg",
+      "image": "https://i.ibb.co/djTbTj5/white-businesscard1.jpg",
       "price": 999,
       "description": "Step into the future of professional networking with the MCARD White PVC Smart Business Card. A beacon of sophistication and innovation, this smart card allows you to share your contact information and online presence effortlessly. Ideal for entrepreneurs, freelancers, and forward-thinking professionals, MCARD offers a sleek, eco-friendly, and efficient way to connect. Make a lasting impression with the pristine elegance of white PVC, encapsulating the essence of modern networking.",
       "color": "white",
       "galary":[
         {
-            "img1":"https://i.ibb.co/jDPq0qf/1.png",
-            "img2":"https://i.ibb.co/jDPq0qf/1.png",
-            "img3":"https://i.ibb.co/jDPq0qf/1.png",
-            "img4":"https://i.ibb.co/jDPq0qf/1.png"
+            "img1":"https://i.ibb.co/BrcmMtV/black-Mcard4-4.jpg",
+            "img2":"https://i.ibb.co/qW9Yg9H/black-Mcard1-1.jpg",
+            "img3":"https://i.ibb.co/Z232yYc/black-Mcard2.jpg",
+            "img4":"https://i.ibb.co/KKB3YXN/Whats-App-Image-2024-03-26-at-7-49-02-PM.jpg"
         }
       ],
       "features": [
@@ -28,7 +28,7 @@
     {
       "id": 2,
       "name": "Black PVC | Digital Business Card",
-      "image": "https://i.ibb.co/KKB3YXN/Whats-App-Image-2024-03-26-at-7-49-02-PM.jpg",
+      "image": "https://i.ibb.co/qW9Yg9H/black-Mcard1-1.jpg",
       "galary":[
         {
             "img1":"https://i.ibb.co/jDPq0qf/1.png",

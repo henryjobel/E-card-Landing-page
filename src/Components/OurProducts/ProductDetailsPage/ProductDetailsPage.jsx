@@ -31,7 +31,7 @@ const ProductDetails1 = () => {
           <div className='w-[600px]'>
             <Carousel>
               <div>
-                <img src={selectedproduct.image} alt={selectedproduct.name} />
+                <img src={selectedproduct.image} alt={selectedproduct.img1} />
               </div>
               <div>
                 <img src={selectedproduct.image} alt={selectedproduct.name} />

@@ -2,7 +2,7 @@ import  { useState, useEffect } from 'react';
 import bkash from '../../assets/payments/bkash_logo_0.jpg';
 import nagad from '../../assets/payments/image-170623-1706521775.jpg';
 import rocket from '../../assets/payments/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo.com.png';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const PvcCheckout = () => {
@@ -42,7 +42,7 @@ const PvcCheckout = () => {
         };
 
         // send data to the server
-        fetch('http://localhost:5000/pvcpayment', {
+        fetch('https://mcard-backend-site.vercel.app/pvcpayment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -55,12 +55,12 @@ const PvcCheckout = () => {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your work has been saved",
+                    title: "Wait For Admin Aproval",
                     showConfirmButton: false,
                     timer: 1500
                 });
                 // Redirect to checkout page after successful submission
-                window.location.href = `/pvc-checkout/${id}`; // Replace '/checkout' with the actual path of your checkout page
+                window.location.href = 'https://mcardbd.com/'; // Replace '/checkout' with the actual path of your checkout page
             }
         });
     };
